@@ -1,0 +1,23 @@
+# ============================================
+#  Example server.properties (public template)
+#  No private data / Safe for GitHub
+# ============================================
+
+motd=Example Minecraft Server
+max-players=20
+online-mode=true
+enable-command-block=false
+spawn-protection=0
+difficulty=normal
+allow-nether=true
+view-distance=10
+simulation-distance=10
+level-seed=
+level-name=world
+gamemode=survival
+white-list=false
+pvp=true
+enable-rcon=false
+enable-query=false
+
+# Ports intentionally removed for security (customizable per environment)

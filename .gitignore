@@ -1,0 +1,19 @@
+# Ignore system files
+*.log
+*.tmp
+
+# Ignore any private or secret files accidentally created
+secret*
+private*
+
+# Ignore Minecraft runtime files
+world/
+logs/
+cache/
+mods/
+plugins/
+backups/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
