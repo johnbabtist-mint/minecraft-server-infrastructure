@@ -1,0 +1,23 @@
+# ============================================
+#  Example systemd unit for Minecraft Server
+#  Safe public template (no private data)
+# ============================================
+
+[Unit]
+Description=Minecraft Server (Example Template)
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/minecraft
+User=minecraft
+Group=minecraft
+
+# Przykładowe uruchomienie – brak prawdziwego JAR
+ExecStart=/usr/bin/java -Xms2G -Xmx2G -jar server.jar nogui
+Restart=on-failure
+
+# Ograniczenia zasobów (opcjonalne)
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
